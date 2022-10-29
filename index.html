@@ -1,0 +1,33 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Sheet Animation</title>
+    <style>
+        .sprite{
+            width:224px;
+            height:224px;
+            background: url(/imgs/yellowbomber.png);
+            animation-name: sprite; 
+  animation-duration: 1s;
+  animation-timing-function: steps(9);
+  animation-iteration-count: infinite;
+  transform: translate(-25%, -25%) scale(0.5);
+        }
+        @keyframes sprite {
+  from { background-position-y: 0px; }
+  to { background-position-y: -2016px; }
+}
+@media only screen and (min-width: 1024px) {
+  .sprite {
+    transform: scale(1);
+  }
+}
+    </style>
+</head>
+<body>
+   <div class="sprite"></div>
+</body>
+</html></html>
