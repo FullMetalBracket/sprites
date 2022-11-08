@@ -9,17 +9,22 @@
         .sprite{
             width:224px;
             height:224px;
-            background: url(./imgs/yellowbomber.png);
             animation-name: sprite; 
   animation-duration: 1s;
   animation-timing-function: steps(9);
   animation-iteration-count: infinite;
   transform: translate(-25%, -25%) scale(0.5);
+  margin:1em;
         }
+
+        .sprite.yellowbomber{background: url(./imgs/yellowbomber.png);}
+        .sprite.duck{background: url(./imgs/duck.png);}
+
         @keyframes sprite {
   from { background-position-y: 0px; }
   to { background-position-y: -2016px; }
 }
+
 @media only screen and (min-width: 1024px) {
   .sprite {
     transform: scale(1);
@@ -28,6 +33,7 @@
     </style>
 </head>
 <body>
-   <div class="sprite"></div>
+   <div class="sprite yellowbomber"></div>
+   <div class="sprite duck"></div>
 </body>
 </html></html>
